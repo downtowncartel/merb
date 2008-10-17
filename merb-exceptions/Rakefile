@@ -1,11 +1,10 @@
 require 'rubygems'
 require 'rake/gempackagetask'
 require "rake/rdoctask"
-require 'merb-core/tasks/merb_rake_helper'
+require File.join(File.dirname(__FILE__), "../merb-core/lib/merb-core/version")
+require File.join(File.dirname(__FILE__), "../merb-core/lib/merb-core/tasks/merb_rake_helper")
 require "spec/rake/spectask"
 require "extlib/tasks/release"
-
-require File.join(File.dirname(__FILE__), "../merb-core/lib/merb-core/version.rb")
 
 ##############################################################################
 # Package && release
